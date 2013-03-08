@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using AutoMapper;
 using Contract;
 using Domain;
@@ -12,6 +13,8 @@ namespace WebApi
             Mapper.CreateMap<ToDoItem, ToDoItemDto>();
             Mapper.CreateMap<Priority, string>()
                 .ConvertUsing(src => src.ToString());
+
+            Mapper.CreateMap<ToDoItemDto, ToDoItem>();
         }
 
         public ToDoItemDto Map(ToDoItem value)
@@ -22,6 +25,11 @@ namespace WebApi
         public IEnumerable<ToDoItemDto> Map(IEnumerable<ToDoItem> items)
         {
             return Mapper.Map<IEnumerable<ToDoItemDto>>(items);
+        }
+
+        public ToDoItem MapReverse(ToDoItemDto value)
+        {
+            return Mapper.Map<ToDoItem>(value);
         }
     }
 }

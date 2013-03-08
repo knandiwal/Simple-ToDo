@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Web.Http;
 using Contract;
 using Data;
@@ -44,23 +46,61 @@ namespace WebApi
         }
 
         // POST api/<controller>
-        public void Post(ToDoItemDto item)
+        public HttpResponseMessage Post(ToDoItemDto item)
         {
-            //todo automapper guff...
-            ToDoItem newItem = Repository.Insert(null);
+            try
+            {
+                ToDoItem todo = Mapper.MapReverse(item);
 
-            //todo return newItemDto mapped with automapper.
+                ToDoItem toDoItem = Repository.Insert(todo);
+
+                HttpResponseMessage response = CreateHttpResponse(HttpStatusCode.OK, toDoItem);
+
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
         }
 
         // PUT api/<controller>/5
-        public void Put(ToDoItemDto item)
+        public HttpResponseMessage Put(ToDoItemDto item)
         {
-            Repository.Update(null);
+            try
+            {
+                ToDoItem todo = Mapper.MapReverse(item);
+                ToDoItem toDoItem = Repository.Update(todo);
+
+                HttpResponseMessage response = CreateHttpResponse(HttpStatusCode.OK, toDoItem);
+
+                return response;
+            }
+            catch (Exception)
+            {
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
         }
 
         // DELETE api/<controller>/5
         public void Delete(int id)
         {
+            try
+            {
+                Repository.Delete(new ToDoItem {Id = id});
+            }
+            catch (Exception)
+            {
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
+        }
+
+        private HttpResponseMessage CreateHttpResponse(HttpStatusCode httpStatusCode, ToDoItem toDoItem)
+        {
+            HttpResponseMessage response = Request.CreateResponse(httpStatusCode);
+            string uri = Url.Route(null, new { id = toDoItem.Id });
+            response.Headers.Location = new Uri(Request.RequestUri, uri);
+            return response;
         }
     }
 }
