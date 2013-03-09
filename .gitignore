@@ -28,4 +28,4 @@ out
 *.pbxuser
 *.xcuserstate
 xcuserdata
-*.sdf
+app_data\*.*
