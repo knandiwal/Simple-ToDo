@@ -4,6 +4,7 @@
         <th>Description</th>
         <th>Priority</th>
         <th>Date Created</th>
+        <th></th>
     </thead>
     <tbody>
         <tr ng-repeat="todo in todos" id="todo_{{todo.Id}}">
@@ -11,6 +12,11 @@
             <td>{{todo.description}}</td>
             <td>{{todo.priority}}</td>
             <td>{{todo.dateCreated}}</td>
+            <td>
+                <a href="#/edit/{{todo.id}}"><i class="icon-edit"></i></a>
+                <a ng-click="Delete($index)"><i class="icon-remove"></i></a>
+            </td>
         </tr>
     </tbody>
+    <button ng-click="Create()">Create a new ToDo item</button>
 </table>

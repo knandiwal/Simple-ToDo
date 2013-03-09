@@ -2,8 +2,8 @@
     config(function ($routeProvider) {
         $routeProvider.
             when('/', { controller: ListController, templateUrl: 'list.html' }).
-          //  when('/new', { controller: CreateController, templateUrl: 'detail.html' }).
-          //  when('/edit/:itemId', { controller: EditController, templateUrl: 'detail.html' }).
+            when('/new', { controller: CreateController, templateUrl: 'detail.html' }).
+            when('/edit/:itemId', { controller: EditController, templateUrl: 'detail.html' }).
             otherwise({ redirectTo: '/' });
     });
 

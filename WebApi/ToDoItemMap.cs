@@ -14,7 +14,9 @@ namespace WebApi
             Mapper.CreateMap<Priority, string>()
                 .ConvertUsing(src => src.ToString());
 
-            Mapper.CreateMap<ToDoItemDto, ToDoItem>();
+            Mapper.CreateMap<ToDoItemDto, ToDoItem>()
+                // TODO use formatter here
+                .ForMember(m => m.DateCreated, opt => opt.MapFrom(x => DateTime.Now));
         }
 
         public ToDoItemDto Map(ToDoItem value)

@@ -171,8 +171,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\detail.html" />
     <Content Include="App\index.html" />
     <Content Include="App\js\app.js" />
+    <Content Include="App\js\createcontroller.js" />
+    <Content Include="App\js\editcontroller.js" />
     <Content Include="App\js\listcontroller.js" />
     <Content Include="App\list.html" />
     <Content Include="App_Data\ToDo.sdf" />

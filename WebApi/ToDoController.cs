@@ -83,16 +83,24 @@ namespace WebApi
         }
 
         // DELETE api/<controller>/5
-        public void Delete(int id)
+        public HttpResponseMessage Delete(int id)
         {
             try
             {
-                Repository.Delete(new ToDoItem {Id = id});
+                Repository.Delete(new ToDoItem { Id = id});
+                HttpResponseMessage response = CreateHttpResponse(HttpStatusCode.OK);
+
+                return response;
             }
             catch (Exception)
             {
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
             }
+        }
+
+        private HttpResponseMessage CreateHttpResponse(HttpStatusCode httpStatusCode)
+        {
+            return Request.CreateResponse(httpStatusCode);
         }
 
         private HttpResponseMessage CreateHttpResponse(HttpStatusCode httpStatusCode, ToDoItem toDoItem)
