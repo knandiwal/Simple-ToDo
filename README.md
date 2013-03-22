@@ -16,5 +16,6 @@ At the minute, technologies include:
 * Protobuf-net
 * HTML5, CSS3 & JavaScript
 * AngjuarJS
+* Cordova/PhoneGap for iOS and Android applications
 
 I will use more technologies as this project evolves over time.
