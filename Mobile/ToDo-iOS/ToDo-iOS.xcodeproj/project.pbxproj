@@ -42,6 +42,13 @@
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		DB95A01616FCCB77001074A8 /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = DB95A00E16FCCB77001074A8 /* detail.html */; };
+		DB95A01716FCCB77001074A8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DB95A00F16FCCB77001074A8 /* index.html */; };
+		DB95A01816FCCB77001074A8 /* app.js in Sources */ = {isa = PBXBuildFile; fileRef = DB95A01116FCCB77001074A8 /* app.js */; };
+		DB95A01916FCCB77001074A8 /* createcontroller.js in Sources */ = {isa = PBXBuildFile; fileRef = DB95A01216FCCB77001074A8 /* createcontroller.js */; };
+		DB95A01A16FCCB77001074A8 /* editcontroller.js in Sources */ = {isa = PBXBuildFile; fileRef = DB95A01316FCCB77001074A8 /* editcontroller.js */; };
+		DB95A01B16FCCB77001074A8 /* listcontroller.js in Sources */ = {isa = PBXBuildFile; fileRef = DB95A01416FCCB77001074A8 /* listcontroller.js */; };
+		DB95A01C16FCCB77001074A8 /* list.html in Resources */ = {isa = PBXBuildFile; fileRef = DB95A01516FCCB77001074A8 /* list.html */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +80,6 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
-		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		301BF5B4109A6A2B0062928A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		301BF5B6109A6A2B0062928A /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		301BF5B8109A6A2B0062928A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -104,6 +110,13 @@
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* ToDo-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ToDo-iOS-Info.plist"; path = "../ToDo-iOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		DB95A00E16FCCB77001074A8 /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
+		DB95A00F16FCCB77001074A8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		DB95A01116FCCB77001074A8 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
+		DB95A01216FCCB77001074A8 /* createcontroller.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = createcontroller.js; sourceTree = "<group>"; };
+		DB95A01316FCCB77001074A8 /* editcontroller.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = editcontroller.js; sourceTree = "<group>"; };
+		DB95A01416FCCB77001074A8 /* listcontroller.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = listcontroller.js; sourceTree = "<group>"; };
+		DB95A01516FCCB77001074A8 /* list.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = list.html; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "ToDo-iOS/config.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				F840E1F0165FE0F500CFE078 /* config.xml */,
-				301BF56E109A69640062928A /* www */,
+				DB95A00D16FCCB77001074A8 /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				307C750510C5A3420062BCA9 /* Plugins */,
@@ -291,6 +304,29 @@
 			path = se.lproj;
 			sourceTree = "<group>";
 		};
+		DB95A00D16FCCB77001074A8 /* www */ = {
+			isa = PBXGroup;
+			children = (
+				DB95A00E16FCCB77001074A8 /* detail.html */,
+				DB95A00F16FCCB77001074A8 /* index.html */,
+				DB95A01016FCCB77001074A8 /* js */,
+				DB95A01516FCCB77001074A8 /* list.html */,
+			);
+			name = www;
+			path = ../../ToDoWebApp/www;
+			sourceTree = "<group>";
+		};
+		DB95A01016FCCB77001074A8 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				DB95A01116FCCB77001074A8 /* app.js */,
+				DB95A01216FCCB77001074A8 /* createcontroller.js */,
+				DB95A01316FCCB77001074A8 /* editcontroller.js */,
+				DB95A01416FCCB77001074A8 /* listcontroller.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,6 +418,9 @@
 				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
 				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
+				DB95A01616FCCB77001074A8 /* detail.html in Resources */,
+				DB95A01716FCCB77001074A8 /* index.html in Resources */,
+				DB95A01C16FCCB77001074A8 /* list.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +451,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				DB95A01816FCCB77001074A8 /* app.js in Sources */,
+				DB95A01916FCCB77001074A8 /* createcontroller.js in Sources */,
+				DB95A01A16FCCB77001074A8 /* editcontroller.js in Sources */,
+				DB95A01B16FCCB77001074A8 /* listcontroller.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
