@@ -42,13 +42,30 @@
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		DB95A01616FCCB77001074A8 /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = DB95A00E16FCCB77001074A8 /* detail.html */; };
-		DB95A01716FCCB77001074A8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DB95A00F16FCCB77001074A8 /* index.html */; };
-		DB95A01816FCCB77001074A8 /* app.js in Sources */ = {isa = PBXBuildFile; fileRef = DB95A01116FCCB77001074A8 /* app.js */; };
-		DB95A01916FCCB77001074A8 /* createcontroller.js in Sources */ = {isa = PBXBuildFile; fileRef = DB95A01216FCCB77001074A8 /* createcontroller.js */; };
-		DB95A01A16FCCB77001074A8 /* editcontroller.js in Sources */ = {isa = PBXBuildFile; fileRef = DB95A01316FCCB77001074A8 /* editcontroller.js */; };
-		DB95A01B16FCCB77001074A8 /* listcontroller.js in Sources */ = {isa = PBXBuildFile; fileRef = DB95A01416FCCB77001074A8 /* listcontroller.js */; };
-		DB95A01C16FCCB77001074A8 /* list.html in Resources */ = {isa = PBXBuildFile; fileRef = DB95A01516FCCB77001074A8 /* list.html */; };
+		DBE9BD8616FCD43C00E727AB /* cordova-2.5.0.js in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BD6316FCD43C00E727AB /* cordova-2.5.0.js */; };
+		DBE9BD8716FCD43C00E727AB /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD6516FCD43C00E727AB /* index.css */; };
+		DBE9BD8816FCD43C00E727AB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD6716FCD43C00E727AB /* logo.png */; };
+		DBE9BD8916FCD43C00E727AB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD6816FCD43C00E727AB /* index.html */; };
+		DBE9BD8A16FCD43C00E727AB /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BD6A16FCD43C00E727AB /* index.js */; };
+		DBE9BD8B16FCD43C00E727AB /* icon-57-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD6E16FCD43C00E727AB /* icon-57-2x.png */; };
+		DBE9BD8C16FCD43C00E727AB /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD6F16FCD43C00E727AB /* icon-57.png */; };
+		DBE9BD8D16FCD43C00E727AB /* icon-72-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7016FCD43C00E727AB /* icon-72-2x.png */; };
+		DBE9BD8E16FCD43C00E727AB /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7116FCD43C00E727AB /* icon-72.png */; };
+		DBE9BD8F16FCD43C00E727AB /* screen-ipad-landscape-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7416FCD43C00E727AB /* screen-ipad-landscape-2x.png */; };
+		DBE9BD9016FCD43C00E727AB /* screen-ipad-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7516FCD43C00E727AB /* screen-ipad-landscape.png */; };
+		DBE9BD9116FCD43C00E727AB /* screen-ipad-portrait-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7616FCD43C00E727AB /* screen-ipad-portrait-2x.png */; };
+		DBE9BD9216FCD43C00E727AB /* screen-ipad-portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7716FCD43C00E727AB /* screen-ipad-portrait.png */; };
+		DBE9BD9316FCD43C00E727AB /* screen-iphone-landscape-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7816FCD43C00E727AB /* screen-iphone-landscape-2x.png */; };
+		DBE9BD9416FCD43C00E727AB /* screen-iphone-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7916FCD43C00E727AB /* screen-iphone-landscape.png */; };
+		DBE9BD9516FCD43C00E727AB /* screen-iphone-portrait-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7A16FCD43C00E727AB /* screen-iphone-portrait-2x.png */; };
+		DBE9BD9616FCD43C00E727AB /* screen-iphone-portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD7B16FCD43C00E727AB /* screen-iphone-portrait.png */; };
+		DBE9BD9716FCD43C00E727AB /* helper.js in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BD7D16FCD43C00E727AB /* helper.js */; };
+		DBE9BD9816FCD43C00E727AB /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BD7E16FCD43C00E727AB /* index.js */; };
+		DBE9BD9916FCD43C00E727AB /* jasmine-html.js in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BD8116FCD43C00E727AB /* jasmine-html.js */; };
+		DBE9BD9A16FCD43C00E727AB /* jasmine.css in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD8216FCD43C00E727AB /* jasmine.css */; };
+		DBE9BD9B16FCD43C00E727AB /* jasmine.js in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BD8316FCD43C00E727AB /* jasmine.js */; };
+		DBE9BD9C16FCD43C00E727AB /* MIT.LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD8416FCD43C00E727AB /* MIT.LICENSE */; };
+		DBE9BD9D16FCD43C00E727AB /* spec.html in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD8516FCD43C00E727AB /* spec.html */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
 
@@ -110,13 +127,30 @@
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* ToDo-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ToDo-iOS-Info.plist"; path = "../ToDo-iOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
-		DB95A00E16FCCB77001074A8 /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
-		DB95A00F16FCCB77001074A8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		DB95A01116FCCB77001074A8 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
-		DB95A01216FCCB77001074A8 /* createcontroller.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = createcontroller.js; sourceTree = "<group>"; };
-		DB95A01316FCCB77001074A8 /* editcontroller.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = editcontroller.js; sourceTree = "<group>"; };
-		DB95A01416FCCB77001074A8 /* listcontroller.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = listcontroller.js; sourceTree = "<group>"; };
-		DB95A01516FCCB77001074A8 /* list.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = list.html; sourceTree = "<group>"; };
+		DBE9BD6316FCD43C00E727AB /* cordova-2.5.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "cordova-2.5.0.js"; sourceTree = "<group>"; };
+		DBE9BD6516FCD43C00E727AB /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		DBE9BD6716FCD43C00E727AB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		DBE9BD6816FCD43C00E727AB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		DBE9BD6A16FCD43C00E727AB /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		DBE9BD6E16FCD43C00E727AB /* icon-57-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57-2x.png"; sourceTree = "<group>"; };
+		DBE9BD6F16FCD43C00E727AB /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		DBE9BD7016FCD43C00E727AB /* icon-72-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72-2x.png"; sourceTree = "<group>"; };
+		DBE9BD7116FCD43C00E727AB /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		DBE9BD7416FCD43C00E727AB /* screen-ipad-landscape-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-ipad-landscape-2x.png"; sourceTree = "<group>"; };
+		DBE9BD7516FCD43C00E727AB /* screen-ipad-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-ipad-landscape.png"; sourceTree = "<group>"; };
+		DBE9BD7616FCD43C00E727AB /* screen-ipad-portrait-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-ipad-portrait-2x.png"; sourceTree = "<group>"; };
+		DBE9BD7716FCD43C00E727AB /* screen-ipad-portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-ipad-portrait.png"; sourceTree = "<group>"; };
+		DBE9BD7816FCD43C00E727AB /* screen-iphone-landscape-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-iphone-landscape-2x.png"; sourceTree = "<group>"; };
+		DBE9BD7916FCD43C00E727AB /* screen-iphone-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-iphone-landscape.png"; sourceTree = "<group>"; };
+		DBE9BD7A16FCD43C00E727AB /* screen-iphone-portrait-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-iphone-portrait-2x.png"; sourceTree = "<group>"; };
+		DBE9BD7B16FCD43C00E727AB /* screen-iphone-portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-iphone-portrait.png"; sourceTree = "<group>"; };
+		DBE9BD7D16FCD43C00E727AB /* helper.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = helper.js; sourceTree = "<group>"; };
+		DBE9BD7E16FCD43C00E727AB /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		DBE9BD8116FCD43C00E727AB /* jasmine-html.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jasmine-html.js"; sourceTree = "<group>"; };
+		DBE9BD8216FCD43C00E727AB /* jasmine.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jasmine.css; sourceTree = "<group>"; };
+		DBE9BD8316FCD43C00E727AB /* jasmine.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jasmine.js; sourceTree = "<group>"; };
+		DBE9BD8416FCD43C00E727AB /* MIT.LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MIT.LICENSE; sourceTree = "<group>"; };
+		DBE9BD8516FCD43C00E727AB /* spec.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = spec.html; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "ToDo-iOS/config.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				F840E1F0165FE0F500CFE078 /* config.xml */,
-				DB95A00D16FCCB77001074A8 /* www */,
+				DBE9BD6216FCD43C00E727AB /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				307C750510C5A3420062BCA9 /* Plugins */,
@@ -304,27 +338,124 @@
 			path = se.lproj;
 			sourceTree = "<group>";
 		};
-		DB95A00D16FCCB77001074A8 /* www */ = {
+		DBE9BD6216FCD43C00E727AB /* www */ = {
 			isa = PBXGroup;
 			children = (
-				DB95A00E16FCCB77001074A8 /* detail.html */,
-				DB95A00F16FCCB77001074A8 /* index.html */,
-				DB95A01016FCCB77001074A8 /* js */,
-				DB95A01516FCCB77001074A8 /* list.html */,
+				DBE9BD6316FCD43C00E727AB /* cordova-2.5.0.js */,
+				DBE9BD6416FCD43C00E727AB /* css */,
+				DBE9BD6616FCD43C00E727AB /* img */,
+				DBE9BD6816FCD43C00E727AB /* index.html */,
+				DBE9BD6916FCD43C00E727AB /* js */,
+				DBE9BD6B16FCD43C00E727AB /* res */,
+				DBE9BD7C16FCD43C00E727AB /* spec */,
+				DBE9BD8516FCD43C00E727AB /* spec.html */,
 			);
 			name = www;
 			path = ../../ToDoWebApp/www;
 			sourceTree = "<group>";
 		};
-		DB95A01016FCCB77001074A8 /* js */ = {
+		DBE9BD6416FCD43C00E727AB /* css */ = {
 			isa = PBXGroup;
 			children = (
-				DB95A01116FCCB77001074A8 /* app.js */,
-				DB95A01216FCCB77001074A8 /* createcontroller.js */,
-				DB95A01316FCCB77001074A8 /* editcontroller.js */,
-				DB95A01416FCCB77001074A8 /* listcontroller.js */,
+				DBE9BD6516FCD43C00E727AB /* index.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		DBE9BD6616FCD43C00E727AB /* img */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD6716FCD43C00E727AB /* logo.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		DBE9BD6916FCD43C00E727AB /* js */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD6A16FCD43C00E727AB /* index.js */,
 			);
 			path = js;
+			sourceTree = "<group>";
+		};
+		DBE9BD6B16FCD43C00E727AB /* res */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD6C16FCD43C00E727AB /* icon */,
+				DBE9BD7216FCD43C00E727AB /* screen */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		DBE9BD6C16FCD43C00E727AB /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD6D16FCD43C00E727AB /* ios */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		DBE9BD6D16FCD43C00E727AB /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD6E16FCD43C00E727AB /* icon-57-2x.png */,
+				DBE9BD6F16FCD43C00E727AB /* icon-57.png */,
+				DBE9BD7016FCD43C00E727AB /* icon-72-2x.png */,
+				DBE9BD7116FCD43C00E727AB /* icon-72.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		DBE9BD7216FCD43C00E727AB /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD7316FCD43C00E727AB /* ios */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		DBE9BD7316FCD43C00E727AB /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD7416FCD43C00E727AB /* screen-ipad-landscape-2x.png */,
+				DBE9BD7516FCD43C00E727AB /* screen-ipad-landscape.png */,
+				DBE9BD7616FCD43C00E727AB /* screen-ipad-portrait-2x.png */,
+				DBE9BD7716FCD43C00E727AB /* screen-ipad-portrait.png */,
+				DBE9BD7816FCD43C00E727AB /* screen-iphone-landscape-2x.png */,
+				DBE9BD7916FCD43C00E727AB /* screen-iphone-landscape.png */,
+				DBE9BD7A16FCD43C00E727AB /* screen-iphone-portrait-2x.png */,
+				DBE9BD7B16FCD43C00E727AB /* screen-iphone-portrait.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		DBE9BD7C16FCD43C00E727AB /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD7D16FCD43C00E727AB /* helper.js */,
+				DBE9BD7E16FCD43C00E727AB /* index.js */,
+				DBE9BD7F16FCD43C00E727AB /* lib */,
+			);
+			path = spec;
+			sourceTree = "<group>";
+		};
+		DBE9BD7F16FCD43C00E727AB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD8016FCD43C00E727AB /* jasmine-1.2.0 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		DBE9BD8016FCD43C00E727AB /* jasmine-1.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BD8116FCD43C00E727AB /* jasmine-html.js */,
+				DBE9BD8216FCD43C00E727AB /* jasmine.css */,
+				DBE9BD8316FCD43C00E727AB /* jasmine.js */,
+				DBE9BD8416FCD43C00E727AB /* MIT.LICENSE */,
+			);
+			path = "jasmine-1.2.0";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,9 +549,24 @@
 				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
 				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
-				DB95A01616FCCB77001074A8 /* detail.html in Resources */,
-				DB95A01716FCCB77001074A8 /* index.html in Resources */,
-				DB95A01C16FCCB77001074A8 /* list.html in Resources */,
+				DBE9BD8716FCD43C00E727AB /* index.css in Resources */,
+				DBE9BD8816FCD43C00E727AB /* logo.png in Resources */,
+				DBE9BD8916FCD43C00E727AB /* index.html in Resources */,
+				DBE9BD8B16FCD43C00E727AB /* icon-57-2x.png in Resources */,
+				DBE9BD8C16FCD43C00E727AB /* icon-57.png in Resources */,
+				DBE9BD8D16FCD43C00E727AB /* icon-72-2x.png in Resources */,
+				DBE9BD8E16FCD43C00E727AB /* icon-72.png in Resources */,
+				DBE9BD8F16FCD43C00E727AB /* screen-ipad-landscape-2x.png in Resources */,
+				DBE9BD9016FCD43C00E727AB /* screen-ipad-landscape.png in Resources */,
+				DBE9BD9116FCD43C00E727AB /* screen-ipad-portrait-2x.png in Resources */,
+				DBE9BD9216FCD43C00E727AB /* screen-ipad-portrait.png in Resources */,
+				DBE9BD9316FCD43C00E727AB /* screen-iphone-landscape-2x.png in Resources */,
+				DBE9BD9416FCD43C00E727AB /* screen-iphone-landscape.png in Resources */,
+				DBE9BD9516FCD43C00E727AB /* screen-iphone-portrait-2x.png in Resources */,
+				DBE9BD9616FCD43C00E727AB /* screen-iphone-portrait.png in Resources */,
+				DBE9BD9A16FCD43C00E727AB /* jasmine.css in Resources */,
+				DBE9BD9C16FCD43C00E727AB /* MIT.LICENSE in Resources */,
+				DBE9BD9D16FCD43C00E727AB /* spec.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,10 +597,12 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				DB95A01816FCCB77001074A8 /* app.js in Sources */,
-				DB95A01916FCCB77001074A8 /* createcontroller.js in Sources */,
-				DB95A01A16FCCB77001074A8 /* editcontroller.js in Sources */,
-				DB95A01B16FCCB77001074A8 /* listcontroller.js in Sources */,
+				DBE9BD8616FCD43C00E727AB /* cordova-2.5.0.js in Sources */,
+				DBE9BD8A16FCD43C00E727AB /* index.js in Sources */,
+				DBE9BD9716FCD43C00E727AB /* helper.js in Sources */,
+				DBE9BD9816FCD43C00E727AB /* index.js in Sources */,
+				DBE9BD9916FCD43C00E727AB /* jasmine-html.js in Sources */,
+				DBE9BD9B16FCD43C00E727AB /* jasmine.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
