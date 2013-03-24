@@ -15,15 +15,26 @@
     </head>
     <body>
         
+<!-- Layouts -->
         <div data-role="layout" data-id="main-layout">
-            <div data-role="header">
+            <header data-role="header">
                 <div data-role="navbar">
                     <span data-role="view-title"></span>
-                    <a class="nav-button" data-align="right" data-role="button" data-icon="add"></a>
+                    <a class="nav-button" data-align="right" data-role="button" data-icon="add" href="#add"></a>
                 </div>
-            </div>
+            </header>
         </div>
 
+        <div data-role="layout" data-id="add-layout">
+            <header data-role="header">
+                <div data-role="navbar">
+                    <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+                    <span data-role="view-title"></span>
+                </div>
+            </header>
+        </div>
+
+<!-- Home view -->
         <div data-role="view" data-show="ToDoApp.show" data-layout="main-layout" id="home" data-title="Home">
             
             <script type="text/x-kendo-templ" id="todo-template">
@@ -32,6 +43,41 @@
 
             <ul data-role="listview" data-style="inset" data-template="todo-template" data-source="ToDoApp.datasource"></ul>
 
+        </div>
+
+<!-- Add view -->
+        <div data-role="view" data-layout="add-layout" id="add" data-title="Add" data-use-native-scrolling="true">
+            <form action="./index.html">
+            <ul data-role="listview" data-style="inset">
+                <li>
+                    <label>Enter title
+                        <input type="text" />
+                    </label>
+                </li>
+                <li>
+                    <label>Enter description
+                        <textarea></textarea>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Date Created
+                        <input type="date" />
+                    </label>
+                </li>
+                <li>
+                    <label>
+                    Select priority
+                    <select>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High ">High</option>
+                    </select>
+                    </label>
+                </li>
+            </ul>
+            <a id="mobile-button1" data-click="ToDoApp.addItem" data-role="button" style="display: block; margin: 2em; text-align: center;">Add to-do item</a>
+        </form>
         </div>
 
     </body>
