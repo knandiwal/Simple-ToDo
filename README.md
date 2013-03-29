@@ -15,7 +15,7 @@ At the minute, technologies include:
 * SqlServer Compact
 * Protobuf-net
 * HTML5, CSS3 & JavaScript
-* AngjuarJS
+* AngularJS
 * Cordova/PhoneGap for iOS and Android applications
 
 I will use more technologies as this project evolves over time.

@@ -68,6 +68,7 @@
 		DBE9BD9B16FCD43C00E727AB /* jasmine.js in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BD8316FCD43C00E727AB /* jasmine.js */; };
 		DBE9BD9C16FCD43C00E727AB /* MIT.LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD8416FCD43C00E727AB /* MIT.LICENSE */; };
 		DBE9BD9D16FCD43C00E727AB /* spec.html in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD8516FCD43C00E727AB /* spec.html */; };
+		DBF1CA8E16FF637E00B54785 /* applicationconstants.js in Sources */ = {isa = PBXBuildFile; fileRef = DBF1CA8D16FF637E00B54785 /* applicationconstants.js */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +156,7 @@
 		DBE9BD8316FCD43C00E727AB /* jasmine.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jasmine.js; sourceTree = "<group>"; };
 		DBE9BD8416FCD43C00E727AB /* MIT.LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MIT.LICENSE; sourceTree = "<group>"; };
 		DBE9BD8516FCD43C00E727AB /* spec.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = spec.html; sourceTree = "<group>"; };
+		DBF1CA8D16FF637E00B54785 /* applicationconstants.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = applicationconstants.js; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "ToDo-iOS/config.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -378,6 +380,7 @@
 		DBE9BD6916FCD43C00E727AB /* js */ = {
 			isa = PBXGroup;
 			children = (
+				DBF1CA8D16FF637E00B54785 /* applicationconstants.js */,
 				DB31F53E16FF05EB00B97653 /* app.js */,
 				DB08A15116FE1C9E006B219C /* jquery.min.js */,
 			);
@@ -611,6 +614,7 @@
 				DBE9BD9B16FCD43C00E727AB /* jasmine.js in Sources */,
 				DB08A15216FE1C9E006B219C /* jquery.min.js in Sources */,
 				DB31F53F16FF05EB00B97653 /* app.js in Sources */,
+				DBF1CA8E16FF637E00B54785 /* applicationconstants.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
