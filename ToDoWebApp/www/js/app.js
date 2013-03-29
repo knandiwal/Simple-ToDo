@@ -9,15 +9,12 @@ $(function() {
 });
 
 ToDoApp.deviceready = function() {
-    ToDoApp.run();
-};
-
-ToDoApp.run = function() {
     ToDoApp.app = new kendo.mobile.Application(document.body, { transition: "slide" }); 
 };
 
 ToDoApp.addItem = function(item){
-    ToDoApp.datasource.add(item);
+    ToDoApp.datasource.create({ title: "John Smith" });
+    ToDoApp.datasource.sync();
 };
 
 ToDoApp.show = function() {
@@ -27,15 +24,15 @@ ToDoApp.show = function() {
 ToDoApp.datasource = new kendo.data.DataSource(
 {
    transport: {
-       read: {
-        url: endpoints.todo,
-        dataType: "json",
-       },
-       create: {
-        url: endpoints.todo,
-        data: {
-          title: "hello-world",
-        }
-       }
-   }
+     read: {
+      url: endpoints.todo,
+      dataType: "json",
+     },
+     create: function (options) { 
+      console.log("here");
+    },
+    error: function (e) {
+        console.log("error");
+    },
+  }
 });

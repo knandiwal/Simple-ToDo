@@ -1,29 +1,32 @@
-var dataservices = (function () {
-	return {
-		getList: function (service) {
-            if (!navigator.onLine) {
-                return getLocal(service);
-            }
-            else {
-                return $.ajax({
-                    url: service,
-                    type: httpVerbs.GET,
-                    dataType: dataTypes.JSON,
-                    beforeSend: function (xhr) { beforeSend(xhr); },
-                    timeout: 15000,
-                    maxTries: 3,
-                    retryCodes: [500]
-                })
-                    .always(function () {
-                        $.publish(dataServicesEvents.endaction);
-                    })
-                    .success(function (data) {
-                        amplify.store.sessionStorage(service, data);
-                    })
-                    .fail(function (error) {
-                        handleServiceError(error);
-                    });
-            }
-        },
-	}
-});
+http = {
+    GET: "get",
+    PUT: "put",
+    POST: "post",
+    DELETE: "delete"
+};
+
+data = {
+    JSON: "json",
+    XML: "xml",
+    HTML: "html"
+};
+
+var dataservices = (function() {
+
+    function handleError(error) {
+        console.log("Error in dataservices: " + error);
+    };
+
+    return {
+        create: function(service, item) {
+            return $.ajax({
+                url: service,
+                type: http.POST,
+                dataType: data.JSON,
+                data: item
+            }).fail(function(error) {
+                handleError(error);
+            });
+        }
+    }
+}());
