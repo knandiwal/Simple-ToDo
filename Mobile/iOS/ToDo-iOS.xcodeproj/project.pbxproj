@@ -47,6 +47,7 @@
 		DB31F53F16FF05EB00B97653 /* app.js in Sources */ = {isa = PBXBuildFile; fileRef = DB31F53E16FF05EB00B97653 /* app.js */; };
 		DB41248717063B390049D2A6 /* data.js in Sources */ = {isa = PBXBuildFile; fileRef = DB41248617063B390049D2A6 /* data.js */; };
 		DB41248A17063B440049D2A6 /* createTodoViewmodel.js in Sources */ = {isa = PBXBuildFile; fileRef = DB41248917063B440049D2A6 /* createTodoViewmodel.js */; };
+		DB750BE717065ACE006F9753 /* indexViewModel.js in Sources */ = {isa = PBXBuildFile; fileRef = DB750BE617065ACE006F9753 /* indexViewModel.js */; };
 		DBE9BD8616FCD43C00E727AB /* cordova-2.5.0.js in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BD6316FCD43C00E727AB /* cordova-2.5.0.js */; };
 		DBE9BD8716FCD43C00E727AB /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD6516FCD43C00E727AB /* index.css */; };
 		DBE9BD8816FCD43C00E727AB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9BD6716FCD43C00E727AB /* logo.png */; };
@@ -137,6 +138,7 @@
 		DB31F53E16FF05EB00B97653 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
 		DB41248617063B390049D2A6 /* data.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = data.js; sourceTree = "<group>"; };
 		DB41248917063B440049D2A6 /* createTodoViewmodel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = createTodoViewmodel.js; sourceTree = "<group>"; };
+		DB750BE617065ACE006F9753 /* indexViewModel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = indexViewModel.js; sourceTree = "<group>"; };
 		DBE9BD6316FCD43C00E727AB /* cordova-2.5.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "cordova-2.5.0.js"; sourceTree = "<group>"; };
 		DBE9BD6516FCD43C00E727AB /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
 		DBE9BD6716FCD43C00E727AB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 		DB41248817063B440049D2A6 /* viewmodels */ = {
 			isa = PBXGroup;
 			children = (
+				DB750BE617065ACE006F9753 /* indexViewModel.js */,
 				DB41248917063B440049D2A6 /* createTodoViewmodel.js */,
 			);
 			path = viewmodels;
@@ -631,6 +634,7 @@
 				DBF1CA8E16FF637E00B54785 /* applicationconstants.js in Sources */,
 				DB41248717063B390049D2A6 /* data.js in Sources */,
 				DB41248A17063B440049D2A6 /* createTodoViewmodel.js in Sources */,
+				DB750BE717065ACE006F9753 /* indexViewModel.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

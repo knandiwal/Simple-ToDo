@@ -1,38 +1,22 @@
-// this global variable is where all the script goes so that it doesn't polute the global namespace
 var ToDoApp = ToDoApp || {};
 
 $(function() {
-    window.onerror = function (errorMsg, url, lineNumber) {
-        console.log("Uncaught error: " + errorMsg + " in " + url + ", line " + lineNumber);
-    };
-    document.addEventListener('deviceready', ToDoApp.deviceready, false);
+	window.onerror = function(errorMsg, url, lineNumber) {
+		console.log("Uncaught error: " + errorMsg + " in " + url + ", line " + lineNumber);
+	};
+	document.addEventListener('deviceready', ToDoApp.deviceready, false);
 });
 
 ToDoApp.deviceready = function() {
-    ToDoApp.app = new kendo.mobile.Application(document.body, { transition: "slide" }); 
-};
-
-ToDoApp.addItem = function(item){
-    ToDoApp.datasource.create({ title: "John Smith" });
-    ToDoApp.datasource.sync();
+	ToDoApp.app = new kendo.mobile.Application(document.body, {
+		transition: "slide"
+	});
 };
 
 ToDoApp.show = function() {
-    $(document.body).show();
-};
+	$(document.body).show();
+}
 
-ToDoApp.datasource = new kendo.data.DataSource(
-{
-   transport: {
-     read: {
-      url: endpoints.todo,
-      dataType: "json",
-     },
-     create: function (options) { 
-      console.log("here");
-    },
-    error: function (e) {
-        console.log("error");
-    },
-  }
-});
+ToDoApp.indexPageInit = function(event) {
+	indexViewModel.getAll();
+};

@@ -13,19 +13,31 @@ data = {
 
 var dataservices = (function() {
 
-    function handleError(error) {
-        console.log("Error in dataservices: " + error);
+    function handleError(textStatus, errorThrown) {
+        console.log("Error in dataservices: " + textStatus + " " + errorThrown);
     };
 
     return {
         create: function(service, item) {
+            console.log("Dataservices: create.");
             return $.ajax({
                 url: service,
                 type: http.POST,
                 dataType: data.JSON,
                 data: item
-            }).fail(function(error) {
+            }).fail(function(jqXHR, textStatus, errorThrown) {
                 handleError(error);
+            });
+        },
+
+        getAll: function(service) {
+            console.log("Dataservices: getAll.");
+            return $.ajax({
+                url: service,
+                type: http.GET,
+                dataType: data.JSON,
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                handleError(textStatus, errorThrown);
             });
         }
     }
