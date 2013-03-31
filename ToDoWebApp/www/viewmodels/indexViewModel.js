@@ -8,5 +8,9 @@ var indexViewModel = kendo.observable({
 			.done(function(data) {
 				self.todoDataSource.data(data);
 		});
+	},
+
+	delete: function(element) {
+		dataservices.destroy(endpoints.todo, element.Id);
 	}
 });

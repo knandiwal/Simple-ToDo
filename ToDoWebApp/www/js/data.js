@@ -39,6 +39,18 @@ var dataservices = (function() {
             }).fail(function(jqXHR, textStatus, errorThrown) {
                 handleError(textStatus, errorThrown);
             });
+        },
+
+        destroy: function(service, id) {
+            console.log("Dataservices: delete: " + id);
+            return $.ajax({
+                url: service,
+                type: http.DELETE,
+                dataType: data.JSON,
+                data: id,
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                handleError(textStatus, errorThrown);
+            });
         }
     }
 }());
