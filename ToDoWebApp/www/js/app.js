@@ -15,8 +15,8 @@ ToDoApp.deviceready = function() {
 
 ToDoApp.show = function() {
 	$(document.body).show();
-}
+};
 
-ToDoApp.indexPageInit = function(event) {
+ToDoApp.indexPageInit = function(e) {
 	indexViewModel.getAll();
 };

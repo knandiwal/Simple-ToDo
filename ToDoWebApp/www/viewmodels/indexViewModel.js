@@ -9,8 +9,14 @@ var indexViewModel = kendo.observable({
 				self.todoDataSource.data(data);
 		});
 	},
+	
+	onSwipe: function(e) {
+		var id = e.sender.element[0].id.substring(10);
+		console.log("swiped: " + id);
+		dataservices.destroy(endpoints.todo, id);
+	},
 
-	delete: function(element) {
-		dataservices.destroy(endpoints.todo, element.Id);
+	onTap: function(e) {
+		console.log("tapped");
 	}
 });
