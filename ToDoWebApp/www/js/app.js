@@ -18,5 +18,6 @@ ToDoApp.show = function() {
 };
 
 ToDoApp.indexPageInit = function(e) {
+	console.log("indexPageInit...");
 	indexViewModel.getAll();
 };

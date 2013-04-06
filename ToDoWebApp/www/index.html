@@ -11,10 +11,11 @@
         <script src="lib/kendo.mobile.min.js" type="text/javascript" ></script>
         <script src="cordova-2.5.0.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/applicationconstants.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
         <script src="js/data.js" type="text/javascript"></script>
         <script src="viewmodels/createTodoViewmodel.js" type="text/javascript"></script>
         <script src="viewmodels/indexViewModel.js" type="text/javascript"></script>
-        <script src="js/app.js" type="text/javascript"></script>
+        <script src="viewmodels/views.js" type="text/javascript"></script>
     </head>
     <body>
         
@@ -22,6 +23,7 @@
         <div data-role="layout" data-id="main-layout">
             <header data-role="header">
                 <div data-role="navbar">
+                    <a class="nav-button" data-align="left" data-role="button" data-icon="refresh" data-click="ToDoApp.Views.refresh"></a>
                     <span data-role="view-title"></span>
                     <a class="nav-button" data-align="right" data-role="button" data-icon="add" href="#add"></a>
                 </div>
@@ -41,12 +43,13 @@
         <div data-role="view" data-show="ToDoApp.show" data-model="indexViewModel" data-layout="main-layout" id="home" data-title="Home" data-init="ToDoApp.indexPageInit">
 
             <script id="todo-template" type="text/x-kendo-templ">
-              <span id="todo-item-#:id#" class="km-listview-link" data-role="touch" data-enable-swipe="true" data-swipe="indexViewModel.onSwipe" data-tap="indexViewModel.onTap">
-                #: title #
+              <span id="todo-item-#:id#" class="km-listview-link" data-role="touch" data-enable-swipe="true" data-swipe="ToDoApp.Views.swiped" data-tap="indexViewModel.onTap">
+                #: title # 
               </span>
+              <a id="delete-#:id#" style="display:none;" data-role="detailbutton" data-style="rowdelete" data-bind="events:{click: removeTodo}"></a>
             </script>
 
-            <ul id="todoList" data-role="listview" data-style="inset" data-pull-to-refresh="true" data-bind="source: todoDataSource" data-template="todo-template"></ul>
+            <ul id="todoList" data-role="listview" data-style="inset" data-bind="source: todoDataSource" data-template="todo-template"></ul>
 
         </div>
 

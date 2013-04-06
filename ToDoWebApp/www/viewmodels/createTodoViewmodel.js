@@ -9,6 +9,7 @@ var newTodoItemViewModel = kendo.observable({
 		console.log(this.toJSON());
 		dataservices.create(endpoints.todo, this.toJSON())
 			.done(function() {
+			ToDoApp.Views.refresh();
 			ToDoApp.app.navigate("#home");
 		});
 	}
