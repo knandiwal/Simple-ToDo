@@ -2,7 +2,7 @@ var newTodoItemViewModel = kendo.observable({
 
 	title: "",
 	description: "",
-	datecreated: "",
+	dateCreated: "",
 	priority: "Medium",
 	currentItem: {},
 
