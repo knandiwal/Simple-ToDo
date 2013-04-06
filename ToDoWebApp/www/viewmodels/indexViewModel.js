@@ -1,24 +1,22 @@
 var indexViewModel = kendo.observable({
 
 	todoDataSource: new kendo.data.DataSource(),
+	currentItem: {},
 
 	getAll: function() {
 		var self = this;
 		dataservices.getAll(endpoints.todo)
 			.done(function(data) {
 			self.todoDataSource.data(data);
+			console.log(data);
 		})
 	},
 
-	removeTodo: function(element) {
+	removeItem: function(element) {
 		var id = element.data.id;
 		console.log("removing: " + id);
 		dataservices.destroy(endpoints.todo, id);
 		ToDoApp.Views.refresh();
-	},
-
-	onTap: function(e) {
-		console.log("tapped");
 	},
 
 	addItem: function(item) {

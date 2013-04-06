@@ -43,10 +43,10 @@
         <div data-role="view" data-show="ToDoApp.show" data-model="indexViewModel" data-layout="main-layout" id="home" data-title="Home" data-init="ToDoApp.indexPageInit">
 
             <script id="todo-template" type="text/x-kendo-templ">
-              <span id="todo-item-#:id#" class="km-listview-link" data-role="touch" data-enable-swipe="true" data-swipe="ToDoApp.Views.swiped" data-tap="indexViewModel.onTap">
+              <span id="todo-item-#:id#" class="km-listview-link" data-role="touch" data-enable-swipe="true" data-swipe="ToDoApp.Views.swiped" data-tap="ToDoApp.Views.tapped" data-url="\#todoEditPage?id=#:id#">
                 #: title # 
               </span>
-              <a id="delete-#:id#" style="display:none;" data-role="detailbutton" data-style="rowdelete" data-bind="events:{click: removeTodo}"></a>
+              <a id="delete-#:id#" style="display:none;" data-role="detailbutton" data-style="rowdelete" data-bind="events:{click: removeItem}"></a>
             </script>
 
             <ul id="todoList" data-role="listview" data-style="inset" data-bind="source: todoDataSource" data-template="todo-template"></ul>
@@ -82,6 +82,37 @@
                 </li>
             </ul>
             <a id="addTodoButton" data-bind="click: saveTodo"  data-role="button" style="display: block; margin: 2em; text-align: center;">Add to-do item</a>
+        </div>
+
+<!-- Edit view -->
+        <div data-role="view" data-model="newTodoItemViewModel" data-layout="add-layout" data-title="Update" data-use-native-scrolling="true" data-show="ToDoApp.Views.edit" id="todoEditPage"> 
+            <ul data-role="listview" data-style="inset">
+                <li>
+                    <label for="title">Enter title 
+                        <input type="text" id="title" data-bind="value: currentItem.title" />
+                    </label>
+                </li>
+                <li>
+                    <label for="description">Enter description 
+                        <textarea id="description" data-bind="value: currentItem.description" ></textarea>
+                    </label>
+                </li>
+                <li>
+                    <label for="date">Date Created 
+                        <input id="date" type="date" data-bind="value: currentItem.datecreated" />
+                    </label>
+                </li>
+                <li>
+                    <label>Select priority
+                    <select data-bind="value: priority">
+                        <option value="Low">Low</option>
+                        <option value="Medium" selected="selected">Medium</option>
+                        <option value="High ">High</option>
+                    </select>
+                    </label>
+                </li>
+            </ul>
+            <a id="updateTodoButton" data-bind="click: updateItem"  data-role="button" style="display: block; margin: 2em; text-align: center;">Update to-do item</a>
         </div>
 
     </body>

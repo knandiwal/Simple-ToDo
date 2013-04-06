@@ -49,6 +49,18 @@ var dataservices = (function() {
             }).fail(function(error) {
                 handleError(error);
             });
+        },
+
+        update: function(service, item) {
+            console.log("Dataservices: update: " + service + item);
+            return $.ajax({
+                url: service,
+                type: http.PUT,
+                dataType: data.JSON,
+                data: item
+            }).fail(function(error) {
+                handleError(error);
+            });
         }
     };
 }());
